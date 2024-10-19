@@ -1,0 +1,16 @@
+{
+  "name": "personal_website_basic",
+  "version": "1.0.0",
+  "description": "design basic personal website with tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailDev": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
