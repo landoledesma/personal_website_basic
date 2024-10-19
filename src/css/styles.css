@@ -582,6 +582,18 @@ input, textarea {
   margin-right: auto;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -596,6 +608,10 @@ input, textarea {
 
 .hidden {
   display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .h-20 {
@@ -626,6 +642,10 @@ input, textarea {
   width: 100%;
 }
 
+.w-\[90\] {
+  width: 90;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -638,12 +658,28 @@ input, textarea {
   max-width: 200px;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .auto-rows-max {
   grid-auto-rows: max-content;
+}
+
+.auto-rows-\[60px\] {
+  grid-auto-rows: 60px;
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(170px\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
 }
 
 .content-center {
@@ -670,12 +706,29 @@ input, textarea {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-color-background {
@@ -710,18 +763,64 @@ input, textarea {
   background-position: center;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-dm-sans {
   font-family: 'DM Sans', sans-serif;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-color {
+  --tw-text-opacity: 1;
+  color: rgb(130 130 130 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -757,8 +856,25 @@ input, textarea {
     position: relative;
   }
 
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:grid-flow-col {
@@ -771,6 +887,10 @@ input, textarea {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:clip-circle-full{
