@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body class="font-dm-sans bg-color-background text-white">
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="./" class="w-1/2 max-w-[200px]">
+                    <img src="./assets/logo.svg" class="block w-full">
+                </a>
+
+                <input type="checkbox" id="menu" 
+                class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 
+                bg-open-menu bg-cover bg-center bg-green-color rounded-lg
+                cursor-pointer 
+                peer-checked/menu:bg-close-menu transition-all z-40
+                md:hidden"></label>
+                <ul class="fixed inset-0 bg-menu-color px-[5%]
+                grid gap-6
+                auto-rows-max content-center justify-items-center
+                clip-circle-0 peer-checked/menu:clip-circle-full
+                transition-[clip-path duration-500
+                md:clip-circle-full md:relative md:grid-flow-col md:p-0
+                md:bg-transparent">
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact me</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+    </div>
 </body>
 </html>
